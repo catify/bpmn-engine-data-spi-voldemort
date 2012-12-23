@@ -24,7 +24,11 @@ public class VoldemortKrati extends DataObjectSPI {
 		this.implementationId = "voldemort";
 
 		// init server
-		VoldemortConfig config = VoldemortConfig.loadFromVoldemortHome("voldemort");
+//		VoldemortConfig config = VoldemortConfig.loadFromVoldemortHome("voldemort");
+		VoldemortConfig config = VoldemortConfig.loadFromEnvironmentVariable();
+		
+		System.out.println("Voldemort config: " + config);
+		
 		VoldemortServer server = new VoldemortServer(config);
 		server.start();
 
