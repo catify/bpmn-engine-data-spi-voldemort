@@ -19,19 +19,16 @@ public class VoldemortKrati extends DataObjectSPI {
 	StoreClient<String, Object> client;
 
 	public VoldemortKrati() {
-		super();
+//		super();
 		
 		this.implementationId = "voldemort";
-
-		// init server
-//		VoldemortConfig config = VoldemortConfig.loadFromVoldemortHome("voldemort");
-		VoldemortConfig config = VoldemortConfig.loadFromEnvironmentVariable();
 		
-		System.out.println("Voldemort config: " + config);
+		// init server
+		VoldemortConfig config = VoldemortConfig.loadFromVoldemortHome("data", "config");
 		
 		VoldemortServer server = new VoldemortServer(config);
 		server.start();
-
+		
 		// init client
 		String bootstrapUrl = "tcp://localhost:6666";
 		StoreClientFactory factory = new SocketStoreClientFactory(
