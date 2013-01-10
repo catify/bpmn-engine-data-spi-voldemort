@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>data-spi</groupId>
-	<artifactId>voldemort-data-sp</artifactId>
+	<groupId>com.catify.bpmn</groupId>
+	<artifactId>data-spi-voldemort</artifactId>
 	<version>1.0</version>
-	<name>voldemort</name>
+	<name>voldemort service provider for the data spi</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,8 +14,8 @@
 		<!-- resolve the catify process engine dependencies (they will be needed 
 			at compile time only) -->
 		<dependency>
-			<groupId>catify</groupId>
-			<artifactId>process-engine-core</artifactId>
+			<groupId>com.catify.bpmn</groupId>
+			<artifactId>bpmn-engine-core</artifactId>
 			<version>1.0</version>
 			<scope>provided</scope>
 		</dependency>
