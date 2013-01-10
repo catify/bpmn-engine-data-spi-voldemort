@@ -19,8 +19,6 @@ public class VoldemortKrati extends DataObjectSPI {
 	StoreClient<String, Object> client;
 
 	public VoldemortKrati() {
-//		super();
-		
 		this.implementationId = "voldemort";
 		
 		// init server
@@ -34,7 +32,7 @@ public class VoldemortKrati extends DataObjectSPI {
 		StoreClientFactory factory = new SocketStoreClientFactory(
 				new ClientConfig().setBootstrapUrls(bootstrapUrl));
 
-		// create a client that executes operations on a single store
+		// create a client that executes operations on a single krati store
 		this.client = factory.getStoreClient("test-krati");
 	}
 
