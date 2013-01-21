@@ -31,7 +31,7 @@
       <type>string</type>
     </key-serializer>
     <value-serializer>
-      <type>string</type>
+      <type>identity</type>
     </value-serializer>
   </store>
   <store>
@@ -45,7 +45,7 @@
       <type>string</type>
     </key-serializer>
     <value-serializer>
-      <type>string</type>
+      <type>identity</type>
     </value-serializer>
   </store>
 </stores>
