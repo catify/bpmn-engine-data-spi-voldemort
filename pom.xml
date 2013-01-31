@@ -4,8 +4,17 @@
 	<groupId>com.catify.bpmn</groupId>
 	<artifactId>data-spi-voldemort</artifactId>
 	<version>1.0</version>
-	<name>voldemort service provider for the data spi</name>
 
+	<name>catify BPMN Engine Core - Voldemort Data Service Provider</name>
+
+	<url>http://www.catify.com</url>
+
+	<description>Voldemort service provider for the Data SPI of the catify BPMN Engine Core</description>
+
+	<scm>
+		<url>https://github.com/catify/bpmn-engine-data-spi-jpa.git</url>
+	</scm>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
