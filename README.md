@@ -16,7 +16,7 @@ Now build the service provider via the usual
 
 "mvn clean install"
 
-and place the jar in the services folder of the bpmn-engine.
+and place the jar in the classpath of the bpmn-engine.
 
 You will also need a couple of voldemort specific config files. For convienience the build process of the voldemort service provider has created a config folder with a sample configuration ("target/config"). Copy the files found in that folder to the config directory of the bpmn engine.
 
